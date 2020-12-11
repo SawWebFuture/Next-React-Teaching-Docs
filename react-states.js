@@ -3,6 +3,19 @@
 
 // use debugger to see the render process at work
 
+/////////// Common errors when working with state
+// arrow function bind the other functions
+
+//fix
+// in construcor // this.increment = this.increment.bind(this)
+// onClick // () => this.increment()
+
+
+//increment(){
+    //"this" is undefined
+//}
+///////////
+
 // Simplest state
 // state = {
 //     count: 0

@@ -1,4 +1,7 @@
 // What is a state
+// Updates the render
+
+// use debugger to see the render process at work
 
 // Simplest state
 // state = {
@@ -14,6 +17,29 @@ constructor(props) {
         count: 0
     }
 }
+
+// inc function
+increment = () => {
+    //const count = this.state.count
+    //use because simplier and shorter
+    const { count } = this.state
+
+    //bad
+    //this.state.count = count + 1
+
+    this.setState({
+        count: count + 1
+    })
+}
+// dec function
+decrement = () => {
+    const { count } = this.state
+    this.setState({
+        count: count - 1
+    })
+}
+
+
 class Welcome extends React.Component {
   render() {
     return (

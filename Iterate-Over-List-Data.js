@@ -41,7 +41,7 @@ class AlbumList extends React.Component {
     renderAlbums(albums) {
         return albums.map(album =>
         (
-            <div className="col-lg-4 col-md-6 mb-4">
+            <div key={album.id} className="col-lg-4 col-md-6 mb-4">
                 <div className="card h-100">
                     <a href="#"><img className="card-img-top" src={album.image} alt="" /></a>
                     <div className="card-body">

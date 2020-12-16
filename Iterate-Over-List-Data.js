@@ -1,4 +1,5 @@
 // How to iterate data in React
+// Saves repeating code
 
 // Dummy data in index.js outside of main return
 
